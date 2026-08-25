@@ -28,6 +28,8 @@
 
 Strengthening my Data Structures & Algorithms fundamentals alongside building real-world software, primarily through Striver's DSA Sheet and practice on LeetCode. The focus is on understanding problem-solving patterns, not memorizing solutions.
 
+**CodeChef:** [hard_yarn_96](https://www.codechef.com/users/hard_yarn_96) — 503+ problems solved across C, C++, and Python · Problem Solver Gold Badge (503/1000)
+
 **Current Learning Path**
 
 `Arrays → Hashing → Two Pointers → Sliding Window → Binary Search → Linked Lists → Stack & Queue → Trees`
@@ -148,3 +150,9 @@ Participated in multiple national-level hackathons and led teams throughout.
   <a href="https://www.linkedin.com/in/umang-raj-445081311" target="_blank"><img src="https://img.shields.io/badge/-Umang%20Raj-0077B5?style=flat-square&logo=Linkedin&logoColor=white"/></a>
   <a href="https://instagram.com/umang._45" target="_blank"><img src="https://img.shields.io/badge/-umang._45-E4405F?style=flat-square&logo=instagram&logoColor=white"/></a>
 </p>
+
+  <a href="https://www.codechef.com/users/hard_yarn_96" target="_blank">
+    <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef"/>
+  </a>
+
+    <a href="https://www.codechef.com/users/hard_yarn_96" target="_blank"><img src="https://img.shields.io/badge/-hard__yarn__96-5B4638?style=flat-square&logo=codechef&logoColor=white"/></a>
