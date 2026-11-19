@@ -1,7 +1,7 @@
 <!-- ============ BANNER ============ -->
 <div align="center">
 
-<img src="assets/banner.svg" alt="Umang Raj - Founder at ROOKE, Backend Developer" width="100%" />
+<img src="/banner.svg" alt="Umang Raj - Founder at ROOKE, Backend Developer" width="100%" />
 
 <a href="https://github.com/Umangsingh09">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=900&color=F7C948&center=true&vCenter=true&repeat=true&width=860&height=50&lines=Founder+%40+ROOKE+%7C+Esports+Tournament+Platform;Backend+Engineer+%7C+FastAPI+%C2%B7+Django+%C2%B7+Supabase;Flutter+%26+Next.js+%7C+Mobile-first+Product+Builder;Led+teams+in+10%2B+hackathons+%7C+Top+5+%40+Manipal;Organized+a+hackathon+with+2%2C500%2B+registrations;Open+to+Backend+%2F+SDE+Internships" alt="Typing animation" />
