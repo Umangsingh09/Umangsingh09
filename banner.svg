@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Umang Raj - Founder at ROOKE, Backend Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0420"/>
+      <stop offset="0.65" stop-color="#1b0a4a"/>
+      <stop offset="1" stop-color="#3b0f6e"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a0a5e"/>
+      <stop offset="1" stop-color="#0f0529"/>
+    </linearGradient>
+    <radialGradient id="p1" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#9ff7ff"/>
+      <stop offset="0.55" stop-color="#2d7bff"/>
+      <stop offset="1" stop-color="#1a1b6e"/>
+    </radialGradient>
+    <radialGradient id="p2" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#ffd1f7"/>
+      <stop offset="0.55" stop-color="#d63df0"/>
+      <stop offset="1" stop-color="#4a0f7a"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff49c8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffd86b"/>
+      <stop offset="1" stop-color="#ff49c8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="floorClip"><rect x="0" y="190" width="1000" height="110"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="300" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="25" r="1.1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="60" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="30" r="1.1"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="590" cy="38" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="22" r="1.1"><animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="70" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="48" r="1.6"><animate attributeName="opacity" values="1;0.3;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="35" cy="150" r="1.1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="975" cy="140" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="150" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="160" r="1"><animate attributeName="opacity" values="1;0.3;1" dur="3.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- squiggles -->
+  <path d="M185 34 q10 -14 20 0 t20 0 t20 0 t20 0" fill="none" stroke="#7df9ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="0;24" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M735 30 q10 -14 20 0 t20 0 t20 0 t20 0" fill="none" stroke="#ff7ae6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="24;0" dur="2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- left planet -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-9;0,0" dur="5s" repeatCount="indefinite"/>
+    <circle cx="130" cy="118" r="50" fill="url(#p1)" filter="url(#soft)"/>
+    <path d="M85 108 q45 -18 90 4" fill="none" stroke="#bff9ff" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+    <path d="M82 132 q48 14 96 -6" fill="none" stroke="#bff9ff" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+    <circle cx="150" cy="96" r="6" fill="#1a1b6e" opacity="0.35"/>
+    <circle cx="108" cy="140" r="4" fill="#1a1b6e" opacity="0.35"/>
+  </g>
+
+  <!-- right ringed planet -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="6s" repeatCount="indefinite"/>
+    <g transform="rotate(-18 868 112)">
+      <ellipse cx="868" cy="112" rx="74" ry="17" fill="none" stroke="#ffb3f0" stroke-width="3" opacity="0.55"/>
+    </g>
+    <circle cx="868" cy="112" r="40" fill="url(#p2)" filter="url(#soft)"/>
+    <g transform="rotate(-18 868 112)">
+      <path d="M794 112 A74 17 0 0 0 942 112" fill="none" stroke="#ffb3f0" stroke-width="3" opacity="0.95"/>
+    </g>
+  </g>
+
+  <!-- floor + grid -->
+  <rect x="0" y="190" width="1000" height="110" fill="url(#floor)"/>
+  <g clip-path="url(#floorClip)" stroke="#ff49c8" stroke-width="1.2" opacity="0.6">
+    <line x1="500" y1="190" x2="-500" y2="300"/>
+    <line x1="500" y1="190" x2="-400" y2="300"/>
+    <line x1="500" y1="190" x2="-300" y2="300"/>
+    <line x1="500" y1="190" x2="-200" y2="300"/>
+    <line x1="500" y1="190" x2="-100" y2="300"/>
+    <line x1="500" y1="190" x2="0" y2="300"/>
+    <line x1="500" y1="190" x2="100" y2="300"/>
+    <line x1="500" y1="190" x2="200" y2="300"/>
+    <line x1="500" y1="190" x2="300" y2="300"/>
+    <line x1="500" y1="190" x2="400" y2="300"/>
+    <line x1="500" y1="190" x2="500" y2="300"/>
+    <line x1="500" y1="190" x2="600" y2="300"/>
+    <line x1="500" y1="190" x2="700" y2="300"/>
+    <line x1="500" y1="190" x2="800" y2="300"/>
+    <line x1="500" y1="190" x2="900" y2="300"/>
+    <line x1="500" y1="190" x2="1000" y2="300"/>
+    <line x1="500" y1="190" x2="1100" y2="300"/>
+    <line x1="500" y1="190" x2="1200" y2="300"/>
+    <line x1="500" y1="190" x2="1300" y2="300"/>
+    <line x1="500" y1="190" x2="1400" y2="300"/>
+    <line x1="500" y1="190" x2="1500" y2="300"/>
+  </g>
+  <!-- moving horizontal grid lines -->
+  <g clip-path="url(#floorClip)" stroke="#ff49c8" stroke-width="1.4">
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="0s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-0.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-0.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-0.5s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-1s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-1s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-1s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-1.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-1.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-1.5s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-2s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-2.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-2.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-2.5s" repeatCount="indefinite"/></line>
+    <line x1="0" x2="1000" y1="190" y2="190"><animate attributeName="y1" values="190;300" dur="3.5s" begin="-3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="y2" values="190;300" dur="3.5s" begin="-3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.7 0 1 1"/><animate attributeName="stroke-opacity" values="0.1;0.9" dur="3.5s" begin="-3s" repeatCount="indefinite"/></line>
+  </g>
+  <!-- horizon glow line -->
+  <line x1="0" y1="190" x2="1000" y2="190" stroke="#ff7ae6" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- title -->
+  <g filter="url(#glow)">
+    <text x="500" y="112" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Verdana,Arial,sans-serif" font-size="68" font-weight="800" letter-spacing="6" fill="#ff3df0" opacity="0.65">UMANG RAJ</text>
+    <text x="500" y="112" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Verdana,Arial,sans-serif" font-size="68" font-weight="800" letter-spacing="6" fill="#ffffff">UMANG RAJ
+      <animate attributeName="opacity" values="1;1;0.88;1;1;0.94;1;1" keyTimes="0;0.4;0.43;0.46;0.8;0.83;0.86;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- subtitle -->
+  <text x="500" y="152" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Verdana,Arial,sans-serif" font-size="22" font-style="italic" fill="#ffc2f6">Founder @ ROOKE  ·  Backend Developer</text>
+  <line x1="380" y1="167" x2="620" y2="167" stroke="url(#sweep)" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- tagline pill -->
+  <rect x="170" y="218" width="660" height="34" rx="17" fill="#0a0420" opacity="0.7" stroke="#7df9ff" stroke-opacity="0.5"/>
+  <text x="500" y="241" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="16" font-weight="700" letter-spacing="3" fill="#e9d5ff">BACKEND APIs  |  FLUTTER APPS  |  HACKATHONS</text>
+
+  <!-- code glyph (left) -->
+  <g filter="url(#soft)">
+    <text x="92" y="246" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="34" font-weight="700" fill="#7df9ff">&lt;/&gt;
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- gamepad (right) -->
+  <g transform="translate(905 236)" filter="url(#soft)" stroke="#ffd86b" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="translate" values="905,236;905,230;905,236" dur="3s" repeatCount="indefinite"/>
+    <path d="M-30 -8 Q-34 12 -24 14 Q-15 16 -10 6 L10 6 Q15 16 24 14 Q34 12 30 -8 Q26 -18 14 -18 L-14 -18 Q-26 -18 -30 -8 Z"/>
+    <line x1="-18" y1="-8" x2="-18" y2="2"/>
+    <line x1="-23" y1="-3" x2="-13" y2="-3"/>
+    <circle cx="14" cy="-8" r="2.2" fill="#ffd86b"/>
+    <circle cx="21" cy="-2" r="2.2" fill="#ffd86b"/>
+  </g>
+</svg>

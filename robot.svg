@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" width="300" height="320" role="img" aria-label="Friendly animated robot mascot">
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b46a8"/>
+      <stop offset="1" stop-color="#2b2a5e"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b3fc4"/>
+      <stop offset="1" stop-color="#352a82"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- sparkles -->
+  <g fill="#ffd86b">
+    <path d="M45 70 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></path>
+    <path d="M255 110 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></path>
+    <path d="M60 200 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#7df9ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></path>
+    <path d="M245 235 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#ff7ae6"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="150" cy="300" rx="55" ry="9" fill="#000" opacity="0.35">
+    <animate attributeName="rx" values="55;45;55" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.22;0.35" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- floating robot -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-12;0,0" dur="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+
+    <!-- jet flame -->
+    <ellipse cx="150" cy="276" rx="16" ry="14" fill="#ff7ae6" opacity="0.85" filter="url(#glow)">
+      <animate attributeName="ry" values="14;22;12;20;14" dur="0.9s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="150" cy="272" rx="8" ry="9" fill="#ffd86b">
+      <animate attributeName="ry" values="9;14;8;12;9" dur="0.9s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- antenna -->
+    <line x1="150" y1="58" x2="150" y2="82" stroke="#8b7cff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="150" cy="52" r="8" fill="#ff4fd8" filter="url(#glow)">
+      <animate attributeName="r" values="7;10;7" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ears -->
+    <rect x="62" y="108" width="14" height="38" rx="7" fill="#8b7cff"/>
+    <rect x="224" y="108" width="14" height="38" rx="7" fill="#8b7cff"/>
+
+    <!-- head -->
+    <rect x="74" y="80" width="152" height="108" rx="32" fill="url(#head)" stroke="#8b7cff" stroke-width="3"/>
+    <rect x="92" y="98" width="116" height="66" rx="24" fill="#0b0a2a"/>
+
+    <!-- eyes (blink) -->
+    <ellipse cx="127" cy="126" rx="10" ry="11" fill="#7df9ff" filter="url(#glow)">
+      <animate attributeName="ry" values="11;11;1;11;11" keyTimes="0;0.9;0.94;0.98;1" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="173" cy="126" rx="10" ry="11" fill="#7df9ff" filter="url(#glow)">
+      <animate attributeName="ry" values="11;11;1;11;11" keyTimes="0;0.9;0.94;0.98;1" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- smile -->
+    <path d="M136 148 Q150 158 164 148" fill="none" stroke="#7df9ff" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- body -->
+    <rect x="98" y="194" width="104" height="72" rx="24" fill="url(#body)" stroke="#8b7cff" stroke-width="3"/>
+    <text x="150" y="238" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="22" font-weight="700" fill="#7df9ff" filter="url(#glow)">&lt;/&gt;
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- left arm (rests) -->
+    <rect x="62" y="204" width="40" height="18" rx="9" fill="#8b7cff" transform="rotate(25 100 213)"/>
+    <circle cx="66" cy="232" r="10" fill="#ffd86b"/>
+
+    <!-- right arm (waves) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-10 200 210;-45 200 210;-10 200 210;-45 200 210;-10 200 210" keyTimes="0;0.15;0.3;0.45;1" dur="4s" repeatCount="indefinite"/>
+      <rect x="196" y="201" width="46" height="18" rx="9" fill="#8b7cff"/>
+      <circle cx="246" cy="210" r="10" fill="#ffd86b"/>
+    </g>
+  </g>
+</svg>
