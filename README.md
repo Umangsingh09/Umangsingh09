@@ -168,17 +168,6 @@ Arrays → Hashing → Two Pointers → Sliding Window → Binary Search → Lin
 
 <!-- ============ SNAKE ============ -->
 
-## Contribution Snake 🐍
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Umangsingh09/Umangsingh09/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Umangsingh09/Umangsingh09/output/github-snake.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Umangsingh09/Umangsingh09/output/github-snake.svg" />
-</picture>
-
-<br/><br/>
 
 <img src="https://github-profile-trophy.vercel.app/?username=Umangsingh09&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" alt="GitHub trophies" />
 
