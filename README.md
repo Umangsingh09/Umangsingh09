@@ -24,7 +24,7 @@
 
 ## About Me 😊
 
-<img align="right" src="assets/robot.svg" alt="Animated robot mascot" width="230" />
+<img align="right" src="/robot.svg" alt="Animated robot mascot" width="230" />
 
 - 🎓 B.Tech Computer Science student at Jaipur National University (2028)
 - 🎮 Founder of **ROOKE**, a mobile esports tournament platform for Indian college and regional gamers
